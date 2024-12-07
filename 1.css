@@ -7,6 +7,67 @@ body {
     margin: 0px;
 }
 
+.content_box {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Bookman Old Style', serif;
+    color: #333;
+}
+
+.title {
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 5px;
+    color: #333; /* Можна змінити на ваш колір */
+}
+
+.title p {
+    font-size: 20px;
+}
+
+.about h2 {
+    font-size: 28px;
+    margin-top: 20px;
+    color: #0eb45e;
+    text-transform: uppercase;
+}
+
+.about h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about ul {
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.about ul li {
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.about ul li::before {
+    content: "✓";
+    color: #0eb45e;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
 
 #main-context-title {
         letter-spacing: 4px;
@@ -14,8 +75,7 @@ body {
     
     .content_box{
     position: relative;
-    width: 100%;
-    display: flex ;
+
     justify-content: space-between;
     align-items:center ;
     padding-left: 60px;
@@ -68,13 +128,9 @@ body {
     
     header ul li a {
         display: inline-block;
-        color: black;
+        color: #333;
         font-weight: 600;
         margin-left: 40px;
         text-decoration: none;
         font-size: 20px;
-    }
-    .title{
-        max-width: 400px;
-        position: relative;
     }
