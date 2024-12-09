@@ -1,3 +1,8 @@
+
+html {
+    scroll-behavior: smooth; /* Анімація плавного прокручування */
+}
+
 body {
     font-family: 'Bookman Old Style';
     background-color: white;
@@ -5,8 +10,15 @@ body {
     margin-left: 0px;
 }
 
-html {
-    scroll-behavior: smooth; /* Анімація плавного прокручування */
+header {
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
 }
 
 .content_box {
@@ -14,7 +26,35 @@ html {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-family: 'Bookman Old Style', serif;
     color: #333;
+    position: relative;
+    justify-content: space-between;
+    align-items:center ;
+    padding-left: 60px;
+    letter-spacing: 1px;
 }
+
+header img {
+    margin-left: 20px;
+    }
+    
+    header ul {
+        position: relative;
+        display: flex;
+        padding-right: 40px;
+    }
+    
+    header ul li {
+        list-style: none;
+    }
+    
+    header ul li a {
+        display: inline-block;
+        color: #333;
+        font-weight: 600;
+        margin-left: 40px;
+        text-decoration: none;
+        font-size: 20px;
+    }
 
 .title {
     font-size: 30px;
@@ -118,31 +158,7 @@ html {
 #main-context-title {
         letter-spacing: 4px;
     }
-    
-    .content_box{
-    position: relative;
 
-    justify-content: space-between;
-    align-items:center ;
-    padding-left: 60px;
-    letter-spacing: 1px;
-    }
-
-    body{
-        margin: 0;
-    }
-
-    header {
-    
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: white;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        letter-spacing: 1px;
-    }
-    
     .logo-title {
         display: flex;
         align-items: center; 
@@ -157,29 +173,7 @@ html {
         left: -200px;
     }
 
-    header img {
-    margin-left: 20px;
-    }
-    
-    header ul {
-        position: relative;
-        display: flex;
-        padding-right: 40px;
-    }
-    
-    header ul li {
-        list-style: none;
-    }
-    
-    header ul li a {
-        display: inline-block;
-        color: #333;
-        font-weight: 600;
-        margin-left: 40px;
-        text-decoration: none;
-        font-size: 20px;
-    }
-
+   
 
     .body{
         display: flex;
@@ -293,20 +287,7 @@ html {
         font-size: 1.31rem;
     }
     
-    
-    @media screen and (max-width: 900px) {
-        .wrapper .carusel {
-            grid-auto-columns: calc((100 / 2) - 9px);
-        }
-    }
-    
-    @media screen and (max-width: 600px) {
-        .wrapper .carusel {
-            grid-auto-columns: 100%;
-        }
-    }
-    
-    
+  
     
     .carusel.dragging .card{
         cursor: grab;
@@ -384,3 +365,18 @@ html {
             text-align: center;
         }
     }
+
+      
+    @media screen and (max-width: 900px) {
+        .wrapper .carusel {
+            grid-auto-columns: calc((100 / 2) - 9px);
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+        .wrapper .carusel {
+            grid-auto-columns: 100%;
+        }
+    }
+    
+    
