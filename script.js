@@ -1,5 +1,5 @@
 const wrapper = document.querySelector(".wrapper");
-const carusel = document.querySelector(".carusel")
+const carusel = document.querySelector(".carrousel")
 const arrowBtns = document.querySelectorAll(".wrapper i");
 const firstCardWidth = carusel.querySelector(".card").offsetWidth;
 const caruselChildrens =[...carusel.children];
