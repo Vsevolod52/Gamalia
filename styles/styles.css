@@ -70,6 +70,11 @@ header {
 }
 
 h2 {
+    font-size: 16px;
+    color: #0eb45e; /* Можна змінити на ваш колір */
+    letter-spacing: 8px;
+}
+h1 {
     color: #0eb45e; /* Можна змінити на ваш колір */
 }
 .title p {
@@ -87,7 +92,6 @@ h2 {
 }
 
 .about-text {
-    font-size: 16px;
     margin-top: 50px;
     flex: 1;
     max-width: 60%; /* Підлаштовується до ширини */
