@@ -12,30 +12,15 @@ body {
 
 header {
     
-    width: 100%;
+    width: 98%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     letter-spacing: 1px;
-}
-
-.content_box {
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    font-family: 'Bookman Old Style', serif;
-    color: #333;
-    position: relative;
-    justify-content: space-between;
-    align-items:center ;
     padding-left: 60px;
-    letter-spacing: 1px;
 }
-
-header img {
-    margin-left: 20px;
-    }
     
     header ul {
         position: relative;
@@ -56,20 +41,36 @@ header img {
         font-size: 20px;
     }
 
+    .content_box {
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        font-family: 'Bookman Old Style', serif;
+        color: #333;
+        position: relative;
+        justify-content: space-between;
+        align-items:center ;
+        padding-left: 60px;
+        letter-spacing: 1px;
+    }
+
 .title {
     font-size: 30px;
     text-align: center;
     letter-spacing: 5px;
-    color: #0eb45e; /* Можна змінити на ваш колір */
     background-image: url("images.jpg");
     background-size: no-repeat;
     background-position: center;
     height: 500px;
     width: 100%;
     padding-left: 0;
-    margin-left: -40px;
+    margin-left: -30px;
+    margin-top: 8px;
  
     padding-top: 160px;
+}
+
+h2 {
+    color: #0eb45e; /* Можна змінити на ваш колір */
 }
 .title p {
     font-size: 25px;
@@ -154,6 +155,10 @@ header img {
     font-size: 20px;
     line-height: 1.6;
 }
+.story img {
+    border-radius: 20px;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
+}
 
 #main-context-title {
         letter-spacing: 4px;
@@ -175,7 +180,7 @@ header img {
 
    
 
-    .body{
+    .main-carrousel{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -212,7 +217,7 @@ header img {
         right:-22px ;
     }
     
-    .wrapper .carusel{
+    .wrapper .carrousel{
         display: grid;
         grid-auto-flow: column;
         grid-auto-columns: calc((100% / 3) - 12px);
@@ -223,26 +228,26 @@ header img {
         scrollbar-width: 0;
     }
     
-    .carusel .no-transition{
+    .carrousel .no-transition{
         scroll-behavior: auto;
     }
     
-    .carusel.dragging{
+    .carrousel.dragging{
         scroll-snap-type: none;
         scroll-behavior: auto;
     }
     
-    .carusel::-webkit-scrollbar{
+    .carrousel::-webkit-scrollbar{
         display: none;
     }
     
-    .carusel :where(.card, .img){
+    .carrousel :where(.card, .img){
         display: flex;
         justify-content: center;
         align-items: center;
     }
     
-    .carusel .card{
+    .carrousel .card{
         scroll-snap-align: start;
         list-style: none;
         background: #fff;
@@ -289,7 +294,7 @@ header img {
     
   
     
-    .carusel.dragging .card{
+    .carrousel.dragging .card{
         cursor: grab;
         user-select: none;
     }
@@ -368,13 +373,13 @@ header img {
 
       
     @media screen and (max-width: 900px) {
-        .wrapper .carusel {
+        .wrapper .carrousel {
             grid-auto-columns: calc((100 / 2) - 9px);
         }
     }
     
     @media screen and (max-width: 600px) {
-        .wrapper .carusel {
+        .wrapper .carrousel {
             grid-auto-columns: 100%;
         }
     }
