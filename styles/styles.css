@@ -1,25 +1,26 @@
 
 html {
     scroll-behavior: smooth; /* Анімація плавного прокручування */
+    max-width: 98%;
 }
 
 body {
     font-family: 'Bookman Old Style';
     background-color: white;
     font-size: 16px;
-    margin-left: 0px;
+    margin-left: 0;
 }
 
 header {
     
-    width: 98%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     letter-spacing: 1px;
-    padding-left: 60px;
+    padding-left: 32px;
 }
     
     header ul {
@@ -61,7 +62,7 @@ header {
     background-size: no-repeat;
     background-position: center;
     height: 500px;
-    width: 100%;
+ 
     padding-left: 0;
     margin-left: -30px;
     margin-top: 8px;
@@ -318,12 +319,13 @@ h1 {
     }
     
     .footer-logo {
+        margin-top: 21px;
         text-align: center;
     }
     
     .footer-logo img {
        
-        margin-bottom: 10px;
+        margin-bottom: 2px;
     }
     
     .footer-links, .footer-social {
