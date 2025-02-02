@@ -163,10 +163,15 @@ h1 {
 .story img {
     border-radius: 20px;
     box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
+    
+    max-width: 360px;
+    min-height: 360px;
+    
+}
+
+.story-image_styles{
     display: flex;
     justify-content: space-between;
-    max-width: 300px;
-    
 }
 
 #main-context-title {
