@@ -146,8 +146,8 @@ text-align: center;
     border-radius: 20px;
     box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
     width: 100%; /* Робимо фото адаптивним */
-    max-width: 220px;
-    min-height: 220px; /* Обмежуємо максимальний розмір */
+    max-width: 210px;
+    min-height: 200px; /* Обмежуємо максимальний розмір */
     height: auto; /* Автоматична висота */
 }
 
