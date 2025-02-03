@@ -1,27 +1,39 @@
 
 html {
     scroll-behavior: smooth; /* Анімація плавного прокручування */
-    max-width: 98%;
-}
 
+}
+.content_box {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 75%;
+    font-family: 'Bookman Old Style', serif;
+    color: #333;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    justify-content: center; /* Центрує по горизонталі */
+    min-height: 300px; /* або встановити потрібне значення */
+    background-color: white;
+}
+#main-photo {
+    max-width: 100%;
+}
 body {
     font-family: 'Bookman Old Style';
-    background-color: white;
     font-size: 16px;
-    margin-left: 0;
-}
+    background-color: #e7e7e7;
 
-header {
-    
-    width: 100%;
+}
+header {    
+    max-height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
+    background-color: black;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     letter-spacing: 1px;
     padding-left: 32px;
 }
+
     
     header ul {
         position: relative;
@@ -35,40 +47,13 @@ header {
     
     header ul li a {
         display: inline-block;
-        color: #333;
+        color: white;
         font-weight: 600;
         margin-left: 40px;
         text-decoration: none;
         font-size: 20px;
     }
 
-    .content_box {
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        font-family: 'Bookman Old Style', serif;
-        color: #333;
-        position: relative;
-        justify-content: space-between;
-        align-items:center ;
-        padding-left: 60px;
-        letter-spacing: 1px;
-    }
-
-.title {
-    font-size: 30px;
-    text-align: center;
-    letter-spacing: 5px;
-    background-image: url("images.jpg");
-    background-size: no-repeat;
-    background-position: center;
-    height: 500px;
- 
-    padding-left: 0;
-    margin-left: -30px;
-    margin-top: 8px;
- 
-    padding-top: 160px;
-}
 
 h2 {
     font-size: 28px;
@@ -78,17 +63,15 @@ h2 {
 h1 {
     color: #0eb45e; /* Можна змінити на ваш колір */
 }
-.title p {
-    font-size: 28px;
-  text-align: center;
-  color: #000000; /* Можна змінити на ваш колір */
+.title {
+text-align: center; 
 
 }
 
-.about-content {
+.about {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 16px;
     align-items: center;
 }
 
@@ -110,82 +93,84 @@ h1 {
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transform: scale(1.4);
+    transform: scale(1.5);
 }
 
 .about h2 {
     font-size: 28px;
-    margin-top: 20px;
     color: #0eb45e;
     text-transform: uppercase;
+    margin-left: 40px;
 }
 
-.about h3 {
-    font-size: 28px;
-    margin-top: 20px;
-    text-align: center;
-    color: #333;
-}
 
 .about p {
+    margin-left: 40px;
     font-size: 18px;
     line-height: 1.6;
-    margin-bottom: 20px;
+
 }
 
-.about ul {
-    margin: 20px 0;
-    padding: 0;
-    list-style: none;
-}
 
 .about ul li {
     font-size: 18px;
     line-height: 1.8;
-    margin: 10px 0;
-    padding-left: 20px;
-    position: relative;
+
+  
 }
 
 .about ul li::before {
     content: "✓";
     color: #0eb45e;
     font-weight: bold;
-    position: absolute;
-    left: 0;
     top: 5px;
 }
-
 .story {
-    font-size: 28px;
     line-height: 1.6;
+    margin: 0 auto; /* Центруємо блок */
+    text-align: center;
 }
+
+.story-image_styles {
+    display: flex;
+    justify-content: space-evenly; /* Рівномірний розподіл */
+    flex-wrap: wrap; /* Дозволяє переносити елементи на новий рядок на менших екранах */
+    gap: 20px; /* Додає відступи між фото */
+}
+
+.story-image_styles div {
+    text-align: center; /* Вирівнюємо імена під фото */
+}
+
 .story img {
     border-radius: 20px;
     box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
-    max-width: 360px;
-    min-height: 360px;
-    
+    width: 100%; /* Робимо фото адаптивним */
+    max-width: 220px;
+    min-height: 220px; /* Обмежуємо максимальний розмір */
+    height: auto; /* Автоматична висота */
 }
 
 .story h1 {
+    font-size: 18px;
+    margin-top: 10px;
     color: #000000;
-
-}
-
-.story-image_styles{
-    display: flex;
-    justify-content: space-between;
 }
 
 #main-context-title {
         letter-spacing: 4px;
+        margin-left: -220px;
+        text-align: 32px;
     }
 
     .logo-title {
         display: flex;
         align-items: center; 
-        gap: 15px; 
+        max-width: 100%;
+    }
+    .logo-title img {
+        max-width: 15%;
+        margin-left: 20px;
     }
     
     .logo-title h1 {
@@ -193,7 +178,6 @@ h1 {
         letter-spacing: 4px;
         font-size: 24px;
         position: relative;
-        left: -200px;
     }
 
    
@@ -319,13 +303,19 @@ h1 {
     }
     
     footer {
+        
         background-color: #f2fdf6;
         color: #333;
-        margin-left: -60px;
+       
         padding-left: 120px;
+        padding-top: 20px;
     }
     
+    #contacts-section {
+    box-shadow: 0 4px 6px #006aff1a;
+    }
     .footer-container {
+       
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
