@@ -163,10 +163,14 @@ h1 {
 .story img {
     border-radius: 20px;
     box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
-    
     max-width: 360px;
     min-height: 360px;
     
+}
+
+.story h1 {
+    color: #000000;
+
 }
 
 .story-image_styles{
@@ -273,6 +277,7 @@ h1 {
         justify-content: center;
         flex-direction: column;
         padding-bottom: 15px;
+        
     }
     
     .card .img{
@@ -302,7 +307,7 @@ h1 {
     }
     
     .card span {
-        color: white;
+       
         font-size: 1.31rem;
     }
     
