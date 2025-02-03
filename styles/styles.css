@@ -135,7 +135,7 @@ text-align: center;
     display: flex;
     justify-content: space-evenly; /* Рівномірний розподіл */
     flex-wrap: wrap; /* Дозволяє переносити елементи на новий рядок на менших екранах */
-    gap: 20px; /* Додає відступи між фото */
+    gap: 15px; /* Додає відступи між фото */
 }
 
 .story-image_styles div {
@@ -375,25 +375,5 @@ text-align: center;
         font-size: 14px;
         border-top: 1px solid #c2c2c2;
     }
-    
-    @media screen and (max-width: 768px) {
-        .footer-container {
-            flex-direction: column;
-            text-align: center;
-        }
-    }
 
-      
-    @media screen and (max-width: 900px) {
-        .wrapper .carrousel {
-            grid-auto-columns: calc((100 / 2) - 9px);
-        }
-    }
-    
-    @media screen and (max-width: 600px) {
-        .wrapper .carrousel {
-            grid-auto-columns: 100%;
-        }
-    }
-    
     
