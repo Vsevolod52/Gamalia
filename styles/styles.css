@@ -147,8 +147,10 @@ text-align: center;
     box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
     width: 100%; /* Робимо фото адаптивним */
     max-width: 210px;
-    min-height: 200px; /* Обмежуємо максимальний розмір */
+     max-height: 240px;
+     min-height: 220px;
     height: auto; /* Автоматична висота */
+    width: auto;
 }
 
 .story h1 {
