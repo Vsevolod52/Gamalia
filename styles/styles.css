@@ -144,7 +144,7 @@ text-align: center;
 .story img {
     border-radius: 20px;
     box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
-    width: 100%; /* Робимо фото адаптивним */
+    width: 80%; /* Робимо фото адаптивним */
     max-width: 210px;
      max-height: 240px;
      min-height: 220px;
